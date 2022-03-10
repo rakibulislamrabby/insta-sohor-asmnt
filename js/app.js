@@ -143,6 +143,7 @@ const showPosts = (posts) => {
 };
 
 const displayLikedPosts = () => {
+  //problem solve with error handling
   document.getElementById("liked").innerHTML = "";
   var h1 = document.createElement("h1");
   h1.innerText = "Liked Post";
@@ -155,6 +156,7 @@ const displayLikedPosts = () => {
 };
 
 const displayReportedPosts = () => {
+  //problem solve with error handling
   document.getElementById("reported").innerHTML = "";
   const reportedPosts = getReportedPosts();
   reportedPosts.forEach((post) => {
