@@ -77,21 +77,70 @@
                 <h1>Reported posts</h1>
             </div>
         </main>
-        <section class="container py-3" >
-            <h4>How does Javascript Work </h4>
-            <p>Javascript হচ্ছে একটি interpreted language। এর মানে ব্রাউজারে পাঠানোর আগে আমাদের জাভাস্ক্রিপ্ট সোর্স কোড কম্পাইল করতে
-            হবে না। যখনই আমরা একটি ওয়েব ব্রাউজারের ভিতরে একটি জাভাস্ক্রিপ্ট প্রোগ্রাম চালাই, তখন ব্রাউজারের engine জাভাস্ক্রিপ্ট
-            কোডটি গ্রহণ করে এবং engine সোর্স কোডটি output করে দেই। Javascript এ একটি শক্তিশালী engine আছে সেইটার নাম হচ্ছে “V8”
-            Javascript আবার dynamically typed language. এটা C অথবা C++ এর মত না। Javascript এ আমরা var, let, const দিয়ে ভ্যারিয়েবল
-            ডিক্লার করতে পারি এখন বেশি ব্যাবহার হয় let এবং const. Let দিয়ে ডিক্লার করা ভ্যারিয়েবলের ভ্যালু চেঞ্জ করা যায়। কিন্তু
-            const দিয়ে ডিক্লার করলে সেইটার ভ্যালু আর পরিবর্তন করা যায় না।
-            প্রথমে ওয়েব পেজ তৈরি করার জন্য এইচটিএমএল এবং সিএসএসকে DOM দ্বারা একত্রিত করা হয়।তারপর, ব্রাউজারের জাভাস্ক্রিপ্ট ইঞ্জিন
-            জাভাস্ক্রিপ্ট ফাইল এবং ইনলাইন কোড লোড করে কিন্তু কোডটি সাথে সাথে রান করে নাহ।এটি HTML এবং CSS Load শেষ হওয়ার জন্য
-            অপেক্ষা করে।এবং এটি হয়ে যাওয়ার পর Javascript executed করে। এর ফলে DOM জাভাস্ক্রিপ্ট কোড দ্বারা আপডেট হয় এবং ব্রাউজার
-            দ্বারা তা render করা হয়।</p>
+        <!-- Qus ans Section----- -->
+        <section id="qus-ans" class="container py-3" >
+            <h1 class="text-center my-2">Javascript Q & A</h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <h5>How does Javascript Work?</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                Javascript হচ্ছে একটি interpreted language। এর মানে ব্রাউজারে পাঠানোর আগে আমাদের জাভাস্ক্রিপ্ট সোর্স কোড কম্পাইল করতে
+                                হবে না। যখনই আমরা একটি ওয়েব ব্রাউজারের ভিতরে একটি জাভাস্ক্রিপ্ট প্রোগ্রাম চালাই, তখন ব্রাউজারের engine জাভাস্ক্রিপ্ট
+                                কোডটি গ্রহণ করে এবং engine সোর্স কোডটি output করে দেই। Javascript এ একটি শক্তিশালী engine আছে সেইটার নাম হচ্ছে “V8”
+                                Javascript আবার dynamically typed language. এটা C অথবা C++ এর মত না। Javascript এ আমরা var, let, const দিয়ে ভ্যারিয়েবল
+                                ডিক্লার করতে পারি এখন বেশি ব্যাবহার হয় let এবং const. Let দিয়ে ডিক্লার করা ভ্যারিয়েবলের ভ্যালু চেঞ্জ করা যায়। কিন্তু
+                                const দিয়ে ডিক্লার করলে সেইটার ভ্যালু আর পরিবর্তন করা যায় না।
+                                প্রথমে ওয়েব পেজ তৈরি করার জন্য এইচটিএমএল এবং সিএসএসকে DOM দ্বারা একত্রিত করা হয়।তারপর, ব্রাউজারের জাভাস্ক্রিপ্ট ইঞ্জিন
+                                জাভাস্ক্রিপ্ট ফাইল এবং ইনলাইন কোড লোড করে কিন্তু কোডটি সাথে সাথে রান করে নাহ।এটি HTML এবং CSS Load শেষ হওয়ার জন্য
+                                অপেক্ষা করে।এবং এটি হয়ে যাওয়ার পর Javascript executed করে। এর ফলে DOM জাভাস্ক্রিপ্ট কোড দ্বারা আপডেট হয় এবং ব্রাউজার দ্বারা তা render করা হয়। মূলত Javascript এইভাবেই কাজ করে। 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <h5>Difference between local storage and session storage?</h5>
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <p>
+                                Most of the things are similar about local storage and session storage. But there are some differences between them.
+                            </p>
+                            <b>Local storage:</b><br>
+                            <p>1.This read-only interface property provides access to the Document's local storage object, the stored data is stored
+                            across browser sessions</p>
+                            <p>2.The storage capacity of local storage is 10MB.</p>
+                            <p>3.The client can only read local storage</p>
+
+
+                            <b>Session storage:</b><br>
+                            <p>1.It's session-based and works per window or tab. This means that data is stored only for the duration of a session,
+                            until the browser (or tab) is closed.</p>
+                            <p>2.The storage capacity of session storage is 5MB</p>
+                            <p>3.The client can also only read local storage</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <footer></footer>
 
+        <!-- bootstap js bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
         <!-- add javascript  file  -->
         <script src="./js/app.js"></script>
     </body>
