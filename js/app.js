@@ -158,6 +158,10 @@ const displayLikedPosts = () => {
 const displayReportedPosts = () => {
   //problem solve with error handling
   document.getElementById("reported").innerHTML = "";
+  var h1 = document.createElement("h1");
+  h1.innerText = "Reported posts";
+  document.getElementById("reported").appendChild(h1)
+
   const reportedPosts = getReportedPosts();
   reportedPosts.forEach((post) => {
     const div = createPost(post);
